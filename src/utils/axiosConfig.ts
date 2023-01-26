@@ -1,7 +1,8 @@
 import axios from "axios";
+import { serviceUrl } from "./urls";
 
 const axiosConfig = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: serviceUrl.baseUrl,
 });
 
 axiosConfig.defaults.headers.common["Access-Control-Allow-Origin"] = "*";

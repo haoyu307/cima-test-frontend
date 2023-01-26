@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Environmental setup
+
+Run backend project first.
+
+At /src/utils/urls.ts file, change the baseUrl to the backend url ( if local, then it would be http://localhost:8000 ).
+
 ## Available Scripts
 
 In the project directory, you can run:

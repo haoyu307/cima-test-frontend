@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Table, Column, HeaderCell, Cell } from "rsuite-table";
 import "rsuite-table/dist/css/rsuite-table.css";
-
+// * hooks
 import { useProductsList } from "../services/queries";
+// * components
 import FilterInput from "./FilterInput";
 
 const ProductsList = () => {
@@ -10,11 +11,6 @@ const ProductsList = () => {
   const [title, setTitle] = useState<string | undefined>();
 
   const productsListResult = useProductsList(sku, title);
-  useEffect(() => {
-    console.log("working", productsListResult);
-    // if (productsListResult.isSuccess) {
-    // }
-  }, [productsListResult]);
 
   return (
     <div className="px-20 py-10">
